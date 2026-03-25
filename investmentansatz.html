@@ -4,68 +4,220 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Investmentansatz | W&S Capital</title>
-  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      margin: 0;
+      background: #f3f3f3;
+      color: #000080;
+      font-family: "Times New Roman", Times, serif;
+      line-height: 1.35;
+    }
+
+    a {
+      color: #800080;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #ff0000;
+    }
+
+    .header {
+      position: relative;
+      text-align: center;
+      padding: 18px 20px 12px;
+      min-height: 170px;
+    }
+
+    .title-block {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .title-block h1 {
+      margin: 0;
+      font-size: 54px;
+      line-height: 1;
+      color: #000080;
+      font-weight: bold;
+    }
+
+    .title-block .subtitle {
+      margin: 6px 0 0;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .title-block .small {
+      margin: 2px 0 0;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .logo-box {
+      position: absolute;
+      top: 18px;
+      right: 28px;
+      background: #ffffff;
+      border: 1px solid #bfbfbf;
+      padding: 8px;
+    }
+
+    .logo-box img {
+      display: block;
+      width: 110px;
+      height: auto;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #666666;
+      margin: 0;
+    }
+
+    .content {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .page-title {
+      margin: 0 0 18px;
+      font-size: 40px;
+    }
+
+    .lead {
+      font-size: 22px;
+      margin-bottom: 28px;
+    }
+
+    .section {
+      border-top: 1px solid #666666;
+      padding-top: 20px;
+      margin-top: 26px;
+    }
+
+    .section h2 {
+      margin: 0 0 12px;
+      font-size: 28px;
+    }
+
+    .section p,
+    .section li {
+      font-size: 21px;
+    }
+
+    ul {
+      padding-left: 28px;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+
+    @media (max-width: 900px) {
+      .header {
+        min-height: auto;
+      }
+
+      .logo-box {
+        position: static;
+        width: fit-content;
+        margin: 18px auto 0;
+      }
+    }
+
+    @media (max-width: 700px) {
+      .title-block h1 {
+        font-size: 38px;
+      }
+
+      .title-block .subtitle {
+        font-size: 16px;
+      }
+
+      .title-block .small {
+        font-size: 15px;
+      }
+
+      .logo-box img {
+        width: 90px;
+      }
+
+      .page-title {
+        font-size: 30px;
+      }
+
+      .lead,
+      .section p,
+      .section li {
+        font-size: 18px;
+      }
+
+      .section h2 {
+        font-size: 24px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <div class="page">
-    <header class="top-header">
-      <div class="logo-wrap">
-        <img src="ws-capital-logo.jpeg" alt="W&S Capital Logo" class="logo" />
-      </div>
-      <h1 class="site-title">W&amp;S Capital</h1>
-      <p class="site-subtitle">Investmentansatz</p>
-    </header>
+  <header class="header">
+    <div class="title-block">
+      <h1>W&amp;S Capital</h1>
+      <p class="subtitle">Warmann Stübner Capital</p>
+      <p class="small">Investmentansatz</p>
+    </div>
 
-    <hr class="divider" />
+    <div class="logo-box">
+      <img src="ws-capital-logo.jpeg" alt="W&S Capital Logo" />
+    </div>
+  </header>
 
-    <main class="inner-page">
-      <a class="back-link" href="index.html">← Zur Startseite</a>
+  <hr class="divider" />
 
-      <h1 class="page-heading">Investmentansatz</h1>
-      <p class="lead">
-        W&amp;S Capital verfolgt einen langfristigen, unternehmerischen Investmentansatz.
-        Im Mittelpunkt stehen Qualität, Kapitaldisziplin, Lernbereitschaft und der Schutz vor permanentem Kapitalverlust.
+  <main class="content">
+    <a class="back-link" href="index.html">← Zur Startseite</a>
+
+    <h1 class="page-title">Investmentansatz</h1>
+    <p class="lead">
+      W&amp;S Capital verfolgt einen langfristigen, unternehmerischen Investmentansatz mit Fokus auf Qualität,
+      Kapitaldisziplin, Lernbereitschaft und den Schutz vor permanentem Kapitalverlust.
+    </p>
+
+    <section class="section">
+      <h2>Unsere Grundsätze</h2>
+      <ul>
+        <li>Langfristiges Denken statt kurzfristiger Marktprognosen</li>
+        <li>Fokus auf verständliche Geschäftsmodelle</li>
+        <li>Bevorzugung starker Marktstellungen und hoher Kapitalrenditen</li>
+        <li>Preisdisziplin und Sicherheitsmarge</li>
+        <li>Geduld als Teil rationaler Kapitalallokation</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Wonach wir suchen</h2>
+      <ul>
+        <li>Nachvollziehbare Wertschöpfung</li>
+        <li>Solide Bilanz und gute Kapitalallokation</li>
+        <li>Skalierbarkeit oder resilienter Cashflow</li>
+        <li>Management mit eigentümerorientiertem Verhalten</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Risikoverständnis</h2>
+      <p>
+        Risiko verstehen wir nicht primär als Kursschwankung, sondern als die Möglichkeit eines dauerhaften Kapitalverlusts.
+        Diversifikation bleibt wichtig, ersetzt jedoch keine sorgfältige Analyse.
       </p>
-
-      <section class="section">
-        <h2>Unsere Grundsätze</h2>
-        <ul>
-          <li>Langfristiges Denken statt kurzfristiger Marktprognosen</li>
-          <li>Fokus auf verständliche Geschäftsmodelle</li>
-          <li>Bevorzugung starker Marktstellungen und hoher Kapitalrenditen</li>
-          <li>Preisdisziplin und Sicherheitsmarge</li>
-          <li>Geduld als aktiver Bestandteil der Kapitalallokation</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>Wonach wir suchen</h2>
-        <ul>
-          <li>Nachvollziehbare Wertschöpfung</li>
-          <li>Solide Bilanz und gute Kapitalallokation</li>
-          <li>Skalierbarkeit oder resilienter Cashflow</li>
-          <li>Management mit rationalem, eigentümerorientiertem Verhalten</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>Wonach wir nicht suchen</h2>
-        <ul>
-          <li>Komplexität ohne klaren Erkenntnisvorsprung</li>
-          <li>Hohes Verschuldungsrisiko ohne ausreichende Ertragskraft</li>
-          <li>Modethemen ohne belastbare ökonomische Grundlage</li>
-          <li>Überaktivität als Ersatz für Überzeugung</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>Risikoverständnis</h2>
-        <p>
-          Risiko verstehen wir nicht primär als Kursschwankung, sondern als die Möglichkeit eines dauerhaften Kapitalverlusts.
-          Diversifikation bleibt wichtig, ersetzt jedoch keine sorgfältige Analyse.
-        </p>
-      </section>
-    </main>
-  </div>
+    </section>
+  </main>
 </body>
 </html>
